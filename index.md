@@ -1,4 +1,4 @@
 # Index
 > Lab Reports
 
-- Lab Report 1
+ 1. Lab Report 1
