@@ -33,6 +33,7 @@
 - Share an example of using the command with no arguments:
   
   <img width="398" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/3ced4c63-54f7-4615-a45a-ba8c6546bac7">  
+  
   Our absolute path before running the command is `/Users/samuelmai/lecture1`.  
   Our output is the list of all the files and folders in our `lecture1` folder. So we are able to see our `Hello.class`, `Hello.java`,   `README`, `messages` listed.  
   The output doesn't have any errors.  
