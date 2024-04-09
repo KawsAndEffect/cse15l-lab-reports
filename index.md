@@ -7,7 +7,7 @@ For each of the commands cd, ls, and cat, and using the workspace you created in
 
 1. `cd` command
 - Share an example of using the command with no arguments:
-![image](<img width="390" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/99e9b069-5527-4843-8a54-d3e47ca6a724">)
+<img width="390" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/99e9b069-5527-4843-8a54-d3e47ca6a724">
 
  The absolute path before using the `cd` command was `/Users/samuelmai/lecture1`. 
  The reason that the output of running `cd` was `/User/samuelmai` is because when we run `cd` with no argument it changes directory to our  home directory. In this case, it led us to exit our lecture1 file and return to the home directory.
@@ -34,7 +34,7 @@ For each of the commands cd, ls, and cat, and using the workspace you created in
    
 - Share an example of using the command with no arguments:
   
-![image]<img width="398" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/3ced4c63-54f7-4615-a45a-ba8c6546bac7">
+<img width="398" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/3ced4c63-54f7-4615-a45a-ba8c6546bac7">
   Our absolute path before running the command is `/Users/samuelmai/lecture1`.
   Our output is the list of all the files and folders in our `lecture1` folder. So we are able to see our `Hello.class`, `Hello.java`,   `README`, `messages` listed.
   The output doesn't have any errors.
@@ -62,7 +62,7 @@ For each of the commands cd, ls, and cat, and using the workspace you created in
    
 - Share an example of using the command with no arguments:
   
-![image]<img width="379" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/c7ef001e-e271-446e-9c87-e4733eac2671">
+<img width="379" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/c7ef001e-e271-446e-9c87-e4733eac2671">
 
   Our absolute path before running the command is `/Users/samuelmai/lecture1`.
   Our output is nothing because we don't give the `cat` command a file to work with. In which case we just get a blank environment. Even though we have files in our current working directory, we don't specify a file so `cat` displays nothing.
