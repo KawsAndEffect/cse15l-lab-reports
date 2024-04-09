@@ -8,9 +8,9 @@
 - Share an example of using the command with no arguments:  
   <img width="390" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/99e9b069-5527-4843-8a54-d3e47ca6a724">  
 
- The absolute path before using the `cd` command was `/Users/samuelmai/lecture1`.  
- The reason that the output of running `cd` was `/User/samuelmai` is because when we run `cd` with no argument it changes directory to our  home directory. In this case, it led us to exit our lecture1 file and return to the home directory.  
- The output is not an error.  
+   The absolute path before using the `cd` command was `/Users/samuelmai/lecture1`.  
+   The reason that the output of running `cd` was `/User/samuelmai` is because when we run `cd` with no argument it changes directory to our  home directory. In this case, it led us to exit our lecture1 file and return to the home directory.  
+   The output is not an error.  
 
 - Share an example of using the command with a path to a directory as an argument:  
   <img width="495" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/7b7d7f2a-df89-4f44-8d4c-9319353043c2">
