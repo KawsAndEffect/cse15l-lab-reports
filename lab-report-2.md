@@ -4,20 +4,23 @@
 
 #### Part 1:
 
-** `Handler` Code:**
-<img width="653" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/87507003-060c-4447-9a8b-e9ef759c8ee8">
+`Handler` **Code:**
+<img src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/92273ca3-c465-445a-88f6-bca85a209133" width="592" height="350">
 
 
-** `ChatServer` Code:**
-<img width="817" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/af461716-af9a-4cdf-bf4c-a9130520f08d">
+`ChatServer` **Code:**
+<img width="851" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/4b58135d-f7c4-4516-9428-0e273f16718f">
 
 
+**Using** `/add-message`**:**
 <img width="548" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/8900a70e-4c8b-4a72-b60f-dde2292318b7">
 
 * **Which methods in your code are called?**
-  In my code
+  In my code, the methods `URLHandler`, `getPath()`, `handleRequest()`, `getQuery()` are called. 
 * **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+  The relevant arguments are the `input` which is the essentially like our data. It 
 * **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+  
 
 <img width="607" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/59c3b50d-d689-4f30-bfe4-4ad30b80c959">
 
