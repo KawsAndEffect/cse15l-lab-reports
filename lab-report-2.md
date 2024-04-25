@@ -6,12 +6,12 @@
 
 `Handler` **Code:**
 
-<img width="610" alt="Screen Shot 2024-04-24 at 11 34 12 PM" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/ccbc8a78-2f97-447a-99e5-e030ee547722">
+<img width="610" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/ccbc8a78-2f97-447a-99e5-e030ee547722">
 
 
 `ChatServer` **Code:**
 
-<img width="823" alt="Screen Shot 2024-04-24 at 11 35 40 PM" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/b1d5825e-3b77-4873-8f31-a4866e1ad87a">
+<img width="823" alt="1" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/534fe1db-9385-4289-bb3a-994dcd1e76ee">
 
 
 **Using** `/add-message`**:**
