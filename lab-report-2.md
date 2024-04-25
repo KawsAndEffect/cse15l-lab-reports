@@ -20,15 +20,18 @@
 * **Which methods in your code are called?**
   In my code, the methods `URLHandler`, `getPath()`, `handleRequest()`, `getQuery()` are called. 
 * **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
-  The relevant arguments are the `input` which is the essentially like our data. It 
+  The relevant arguments are the `input` which is what the user is adding onto the website output. It starts as an empty string and as we add more messages it adds onto this input string. It's essentially like our storage. The `parameters` variable stores the users input split in half by the & symbol, which ultimately splits up the message and the user's name. The 'phrase' variable is an array that is used to distinguish whether or not we are looking at the message string or the user's name, and is used in a loop splitting at the = symbol. The 'message' variable is a string which is used to store the message given by the user. The 'user' variable is a string that saves the user's name. These two variables are used to put together the final output which is stored in 'result', and added to the input string.
 * **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
-  
+  The 'user', 'message', 'parameters', and 'phrase' change after each request, and the 'input' is added onto given these new changes, but still contains the original previous messages in order to output a conversation. The `input` changes to `jpolitz: Hello`, `user` to `jpolitz:`, `message` to `Hello`, `parameters` to `s=Hello&user=jpolitz`. `phrase` updates during the loop, after the first loop it stores the value `s=Hello` and splits it at the =, saving `Hello` to the message variable. After the second loop `phrase` has the value `user=jpolitz` and splits it at the =, saving `jpolitz` to the user variable.
 
 <img width="607" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/59c3b50d-d689-4f30-bfe4-4ad30b80c959">
 
 * **Which methods in your code are called?**
+  In my code, the methods `URLHandler`, `getPath()`, `handleRequest()`, `getQuery()` are called. 
 * **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
+    The relevant arguments are the `input` which is what the user is adding onto the website output. It starts as an empty string and as we add more messages it adds onto this input string. It's essentially like our storage. The `parameters` variable stores the users input split in half by the & symbol, which ultimately splits up the message and the user's name. The 'phrase' variable is an array that is used to distinguish whether or not we are looking at the message string or the user's name, and is used in a loop splitting at the = symbol. The 'message' variable is a string which is used to store the message given by the user. The 'user' variable is a string that saves the user's name. These two variables are used to put together the final output which is stored in 'result', and added to the input string.
 * **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+  The 'user', 'message', 'parameters', and 'phrase' change after each request, and the 'input' is added onto given these new changes, but still contains the original previous messages in order to output a conversation. The `input` changes to `jpolitz: Hello\nyash: How are you`, `user` to `yash`, `message` to `How are you`, `parameters` to `s=How are you&user=yash`. `phrase` updates during the loop, after the first loop it stores the value `s=How are you` and splits it at the =, saving `How are you` to the message variable. After the second loop `phrase` has the value `user=yash` and splits it at the =, saving `yash` to the user variable.
 
 #### Part 2:
 
