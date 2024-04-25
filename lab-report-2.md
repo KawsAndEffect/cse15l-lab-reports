@@ -5,11 +5,13 @@
 #### Part 1:
 
 `Handler` **Code:**
-<img src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/92273ca3-c465-445a-88f6-bca85a209133" width="592" height="350">
+
+<img width="610" alt="Screen Shot 2024-04-24 at 11 34 12 PM" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/ccbc8a78-2f97-447a-99e5-e030ee547722">
 
 
 `ChatServer` **Code:**
-<img width="851" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/4b58135d-f7c4-4516-9428-0e273f16718f">
+
+<img width="823" alt="Screen Shot 2024-04-24 at 11 35 40 PM" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/b1d5825e-3b77-4873-8f31-a4866e1ad87a">
 
 
 **Using** `/add-message`**:**
