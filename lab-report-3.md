@@ -134,8 +134,6 @@ These options enhance the utility of `grep` by providing flexible and powerful w
 
 ### My answer using inspiration/help from the ChatGPT output:
 
-<img width="1436" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/bc1537ba-50bd-41da-8d66-e711ea812a90">
-
 I chose the command grep, which is a powerful tool used for searching text data sets for lines that match a regular expression. Here are four interesting command-line options for grep:
 
 1. `-i (ignore case)`
