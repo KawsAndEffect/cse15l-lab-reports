@@ -4,7 +4,7 @@
 
 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
 
-  ```
+   ```
   @Test
   public void testAverageWithoutLowest() {
     double[] arr = {1.0, 1.0, 2.0, 3.0};
@@ -12,11 +12,11 @@
     double actual = ArrayExamples.averageWithoutLowest(arr);
     assertEquals(expected, actual, 0.0001);
   }
-  ```
+   ```
 
 2. An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
 
-  ```
+   ```
   @Test
   public void correctTestAverageWithoutLowest() {
     double[] arr = {2.0, 3.0, 5.0, 7.0};
@@ -24,7 +24,7 @@
     double actual = ArrayExamples.averageWithoutLowest(arr);
     assertEquals(expected, actual, 0.0001);
   }
-  ```
+   ```
 
 3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
@@ -33,7 +33,7 @@
 
 4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
 
-  ```
+   ```
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -46,9 +46,9 @@
     }
     return sum / (arr.length - 1);
   }
-  ```
+   ```
 
-  ```
+   ```
   static double averageWithoutLowest(double[] arr) {
   if (arr.length < 2) { return 0.0; }
   double lowest = arr[0];
@@ -66,7 +66,7 @@
   }
   return sum / (arr.length - 1);
 }
-  ```
+   ```
 
 5. Briefly describe (2-3 sentences) why the fix addresses the issue.
 
@@ -88,44 +88,44 @@ I chose the command grep, which is a powerful tool used for searching text data 
 1. `-i (ignore case)`
   This option makes the search case-insensitive, allowing you to find matches regardless of case.
   
-  ``` grep -i "error" ./technical/logs.txt ```
+   ``` grep -i "error" ./technical/logs.txt ```   
 
   This command searches for the word "error" in logs.txt within the ./technical directory, ignoring case differences like "Error", "ERROR", etc.
   
-  ``` grep -i "network" ./technical/config/settings.conf ```
+   ``` grep -i "network" ./technical/config/settings.conf ```   
 
   This searches for "network" in the settings.conf file, catching all cases like "Network", "NETWORK", etc., which is useful for configuration files where case usage might vary.
 
 2. `-r (recursive)`
   This option allows grep to perform a recursive search through directories.
   
-  ``` grep -r "function" ./technical/ ```
+   ``` grep -r "function" ./technical/ ```   
   
   This command recursively searches for the word "function" in all files under the ./technical directory. It's useful for searching through complex directory structures.
   
-  ``` grep -r "TODO" ./technical/src/ ```
+   ``` grep -r "TODO" ./technical/src/ ```   
   
   This searches for "TODO" in all files within the `./technical/src` directory and its subdirectories, helping developers quickly find unfinished tasks.
 
 3. `--include`
   This option allows you to specify a pattern for the files to search within, which can be combined with -r for more targeted searching.
   
-  ``` grep -r --include "*.py" "def" ./technical/scripts/ ```
+   ``` grep -r --include "*.py" "def" ./technical/scripts/ ```   
   
   This command searches for the keyword "def" in all Python files within the `./technical/scripts` directory, useful for finding function definitions in Python scripts.
   
-  ``` grep -r --include "*.md" "API" ./technical/docs/ ```
+   ``` grep -r --include "*.md" "API" ./technical/docs/ ```   
   
   This searches for "API" in all Markdown files within the `./technical/docs` directory, which is helpful for reviewing documentation.
 
 4. `-v (invert match)`
   This option inverts the match, showing only the lines that do not match the given pattern.
   
-  ``` grep -v "success" ./technical/logs.txt ```
+   ``` grep -v "success" ./technical/logs.txt ```   
   
   This command shows all lines in logs.txt that do not contain the word "success", which can be useful for filtering out non-error messages in logs.
   
-  ``` grep -v "deprecated" ./technical/reports/usage_report.txt ```
+   ``` grep -v "deprecated" ./technical/reports/usage_report.txt ```   
   
   This filters out lines that contain the word "deprecated" from the `usage_report.txt`, helping to focus on current features or methods.
   
@@ -140,7 +140,8 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This option makes the search case-insensitive, allowing you to find matches regardless of case.
 
   **First Example**
-  ``` grep -i "planes" ./technical/911report/chapter-1.txt ```
+
+   ``` grep -i "planes" ./technical/911report/chapter-1.txt ```   
 
   **OUTPUT**
   <img width="1439" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/a551b5fa-07cf-48d4-8d41-c51c21332709">
@@ -149,6 +150,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This command searches for the word "planes" in `./technical/911report/chapter-1.txt` within the ./technical/911report/chapter-1.txt file, ignoring case differences like "Planes",   "PLANES", etc.
 
 **Second Example**
+
 ``` grep -i "Las Vegas" ./technical/911report/chapter-1.txt ```
   
   **OUTPUT**
@@ -162,6 +164,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This option allows grep to perform a recursive search through directories.
   
   **First Example**
+
   ``` grep -r "jet" ./technical/911report ```
   
   **OUTPUT**
@@ -171,6 +174,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This command recursively searches for the word "jet" in all files under the `./technical/911report` directory and its subdirectories. It's useful for searching through complex directory structures.
   
   **Second Example**
+
   ``` grep -r "commander" ./technical/911report ```
   
   **OUTPUT**
@@ -185,6 +189,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This option allows you to specify a pattern for the files to search within, which can be combined with -r for more targeted searching.
   
   **First Example**
+
   ``` grep -r --include "*.py" "def" ./technical/911report ```
   
   **OUTPUT**
@@ -193,6 +198,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This command searches for the keyword "def" in all Python files within the `./technical/911report` directory, useful for finding function definitions in Python scripts. This would be very helpful if the whole `./technical` directory wasn't a bunch of subdirectories of .txt files. Nothing happened since there are no `.py` files in `911report` subdirectory.
   
   **Second Example**
+
   ``` grep -r --include "*.txt" "cruel" ./technical/911report ```
   
   **OUTPUT**
@@ -206,6 +212,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This option inverts the match, showing only the lines that do not match the given pattern.
   
   **First Example**
+
   ``` grep -v "success" ./technical/911report/chapter-1.txt ```
   
   **OUTPUT**
@@ -215,6 +222,7 @@ I chose the command grep, which is a powerful tool used for searching text data 
   This command shows all lines in `./technical/911report/chapter-1.txt` that do not contain the word "success", which can be useful for filtering out non-error messages in logs. In this case its not as useful since its just a `.txt` file instead of a testing file. 
   
   **Second Example**
+
   ``` grep -v "the" ./technical/911report/chapter-1.txt ```
   
   **OUTPUT**
