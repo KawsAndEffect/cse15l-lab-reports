@@ -4,7 +4,7 @@
 
 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown).
 
-   ```
+```
   @Test
   public void testAverageWithoutLowest() {
     double[] arr = {1.0, 1.0, 2.0, 3.0};
@@ -12,11 +12,11 @@
     double actual = ArrayExamples.averageWithoutLowest(arr);
     assertEquals(expected, actual, 0.0001);
   }
-   ```
+```
 
-3. An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
+2. An input that doesn't induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown).
 
-  ```
+```
   @Test
   public void correctTestAverageWithoutLowest() {
     double[] arr = {2.0, 3.0, 5.0, 7.0};
@@ -24,16 +24,16 @@
     double actual = ArrayExamples.averageWithoutLowest(arr);
     assertEquals(expected, actual, 0.0001);
   }
-  ```
+```
 
-4. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
+3. The symptom, as the output of running the two tests above (provide it as a screenshot -- one test should pass, one test should fail).
 
   <img width="834" alt="image" src="https://github.com/KawsAndEffect/cse15l-lab-reports/assets/102554089/fd5f2b9a-15df-412c-8eb7-b6f016204ae3">
 
 
-5. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
+4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown).
 
-  ```
+```
   static double averageWithoutLowest(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
@@ -46,9 +46,9 @@
     }
     return sum / (arr.length - 1);
   }
-  ```
+```
 
-  ```
+```
   static double averageWithoutLowest(double[] arr) {
   if (arr.length < 2) { return 0.0; }
   double lowest = arr[0];
@@ -66,9 +66,9 @@
   }
   return sum / (arr.length - 1);
 }
-  ```
+```
 
-6. Briefly describe (2-3 sentences) why the fix addresses the issue.
+5. Briefly describe (2-3 sentences) why the fix addresses the issue.
 
   The reason that our original `averageWithoutLowest()` method was buggy was due to the fact that it didn't take into account the case where the lowest number occurs more than once in the array. This resulted in the multiple occurences of the lowest number being excluded from the average calculation. We address this issue by adding in the boolean `lowestAlreadyRemoved` which starts with being assigned `false` and is assigned `true` when `num` == `lowest` AND `lowestAlreadyRemoved` is still false, which means after the first time we encounter the lowest number, it will be excluded and will no longer be excluded any time after.
 
